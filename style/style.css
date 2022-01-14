@@ -120,4 +120,109 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
             flex-direction: row;
   }
 }
+
+.snippets {
+  padding: 1.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.snippets h2 {
+  color: #4c545d;
+}
+
+.snippets p {
+  color: #9fabb2;
+}
+
+.snippets .image_text_container {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.snippets .image_text_container .text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.snippets .image_text_container .text_subcontainer h3 {
+  color: #4c545d;
+}
+
+@media screen and (min-width: 1024px) {
+  .snippets {
+    padding: 3rem 9rem;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .snippets h2 {
+    font-size: 2em;
+  }
+  .snippets h3 {
+    font-size: 1.5em;
+  }
+  .snippets p {
+    font-size: 1.1em;
+    width: 50%;
+  }
+  .snippets .image_text_container {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 6rem;
+    gap: 0;
+  }
+  .snippets .image_text_container p {
+    width: 100%;
+  }
+  .snippets .image_text_container img {
+    position: relative;
+    max-width: 65%;
+    right: 11rem;
+  }
+  .snippets .image_text_container .text_container {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .snippets .image_text_container img {
+    width: 100%;
+    right: 13.5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
