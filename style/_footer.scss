@@ -27,6 +27,11 @@ footer {
                 color: $dark-grayish-blue;
                 cursor: pointer;
                 text-decoration: none;
+
+                &:hover {
+                    color: $strong-cyan;
+                    transition: .2s;
+                }
             }
         }
     }
@@ -35,6 +40,15 @@ footer {
         list-style-type: none;
         display: flex;
         gap: 2rem;
+
+        svg {
+            fill: #4c545c;
+
+            &:hover {
+                fill: $strong-cyan;
+                transition: .2s;
+            }
+        }
     }
 }
 

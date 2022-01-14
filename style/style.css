@@ -72,7 +72,7 @@ main .buttons_container {
 }
 
 main .buttons_container .ios, main .buttons_container .mac {
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-family: inherit;
   color: #fff;
   font-weight: 600;
@@ -80,6 +80,12 @@ main .buttons_container .ios, main .buttons_container .mac {
   border-radius: 3rem;
   border: none;
   cursor: pointer;
+}
+
+main .buttons_container .ios:hover, main .buttons_container .mac:hover {
+  opacity: 80%;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 main .buttons_container .ios.ios, main .buttons_container .mac.ios {
@@ -434,7 +440,7 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
 }
 
 .clipboard .buttons_container .ios, .clipboard .buttons_container .mac {
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-family: inherit;
   color: #fff;
   font-weight: 600;
@@ -442,6 +448,12 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
   border-radius: 3rem;
   border: none;
   cursor: pointer;
+}
+
+.clipboard .buttons_container .ios:hover, .clipboard .buttons_container .mac:hover {
+  opacity: 80%;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .clipboard .buttons_container .ios.ios, .clipboard .buttons_container .mac.ios {
@@ -529,12 +541,28 @@ footer nav ul a {
   text-decoration: none;
 }
 
+footer nav ul a:hover {
+  color: #26baa4;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 footer .socials {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
+}
+
+footer .socials svg {
+  fill: #4c545c;
+}
+
+footer .socials svg:hover {
+  fill: #26baa4;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 @media screen and (min-width: 1024px) {
