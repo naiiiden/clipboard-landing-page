@@ -225,4 +225,48 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
     right: 13.5rem;
   }
 }
+
+.anywhere {
+  padding: 1.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.anywhere h2 {
+  color: #4c545d;
+}
+
+.anywhere p {
+  color: #9fabb2;
+}
+
+.anywhere img {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .anywhere {
+    padding: 9rem 9rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .anywhere h2 {
+    font-size: 2em;
+  }
+  .anywhere p {
+    width: 50%;
+    font-size: 1.1em;
+  }
+  .anywhere img {
+    margin-top: 3rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

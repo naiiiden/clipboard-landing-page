@@ -1,0 +1,39 @@
+.anywhere {
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    h2 {
+        color: $dark-grayish-blue;
+    }
+
+    p {
+        color: $grayish-blue;
+    }
+
+    img {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .anywhere {
+        padding: 9rem 9rem;
+        align-items: center;
+
+        h2 {
+            font-size: 2em;
+        }
+
+        p {
+            width: 50%;
+            font-size: 1.1em;
+        }
+
+        img {
+            margin-top: 3rem;
+        }
+    }
+}
