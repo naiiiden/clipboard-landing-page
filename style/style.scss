@@ -17,9 +17,24 @@ body {
     position: relative;
     font-family: Bai Jamjuree, sans-serif;
     font-size: 18px;
+
+    background: url("../images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+@media screen and (min-width: 1024px) {
+    body {
+        background: url("../images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+@import "./main";

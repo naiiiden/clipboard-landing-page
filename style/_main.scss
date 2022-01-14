@@ -1,0 +1,75 @@
+main {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+
+    img {
+        padding: 1.5rem 0;
+    }
+
+    h1 {
+        color: $dark-grayish-blue;
+    }
+
+    p {
+        color: $grayish-blue;
+    }
+
+    .buttons_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .ios, .mac {
+            padding: 1rem;
+            font-family: inherit;
+            color: #fff;
+            font-weight: 600;
+            font-size: inherit;
+            border-radius: 3rem;
+            border: none;
+            cursor: pointer;
+
+            &.ios {
+                background: $strong-cyan;
+                box-shadow: 0px 4px 0px #16a085;
+            }
+
+            &.mac {
+                background: $light-blue;
+                box-shadow: 0px 4px 0px hsl(233, 62%, 57%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 3rem 9rem;
+        gap: 2rem;
+
+        img {
+            padding: 9rem 0 3rem 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            width: 50%;
+            font-size: 1.1em;
+        }
+
+
+        .buttons_container {
+            margin-top: 3rem;
+            justify-content: center;
+            flex-direction: row;
+        }
+    }
+}
