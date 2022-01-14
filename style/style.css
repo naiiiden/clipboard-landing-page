@@ -396,4 +396,87 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
     max-width: 15%;
   }
 }
+
+.clipboard {
+  padding: 1.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.clipboard h2 {
+  color: #4c545d;
+}
+
+.clipboard p {
+  color: #9fabb2;
+}
+
+.clipboard .buttons_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.clipboard .buttons_container .ios, .clipboard .buttons_container .mac {
+  padding: 1rem;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 600;
+  font-size: inherit;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.clipboard .buttons_container .ios.ios, .clipboard .buttons_container .mac.ios {
+  background: #26baa4;
+  -webkit-box-shadow: 0px 4px 0px #16a085;
+          box-shadow: 0px 4px 0px #16a085;
+}
+
+.clipboard .buttons_container .ios.mac, .clipboard .buttons_container .mac.mac {
+  background: #6173ff;
+  -webkit-box-shadow: 0px 4px 0px #4d5dd5;
+          box-shadow: 0px 4px 0px #4d5dd5;
+}
+
+@media screen and (min-width: 1024px) {
+  .clipboard {
+    padding: 3rem 9rem;
+    gap: 2rem;
+  }
+  .clipboard h2 {
+    font-size: 2em;
+  }
+  .clipboard p {
+    width: 50%;
+    font-size: 1.1em;
+  }
+  .clipboard .buttons_container {
+    margin-top: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 /*# sourceMappingURL=style.css.map */
