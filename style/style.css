@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,48 +29,30 @@ img {
     background-size: 100%;
   }
 }
-
-main {
+.main {
   padding: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   gap: 1.5rem;
 }
-
-main img {
+.main img {
   padding: 1.5rem 0;
 }
-
-main h1 {
-  color: #4c545d;
+.main h1 {
+  color: hsl(210deg, 10%, 33%);
 }
-
-main p {
-  color: #9fabb2;
+.main p {
+  color: hsl(201deg, 11%, 66%);
 }
-
-main .buttons_container {
+.main .buttons_container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1.5rem;
 }
-
-main .buttons_container .ios, main .buttons_container .mac {
+.main .buttons_container .ios, .main .buttons_container .mac {
   padding: 1rem 2rem;
   font-family: inherit;
   color: #fff;
@@ -81,110 +62,74 @@ main .buttons_container .ios, main .buttons_container .mac {
   border: none;
   cursor: pointer;
 }
-
-main .buttons_container .ios:hover, main .buttons_container .mac:hover {
+.main .buttons_container .ios:hover, .main .buttons_container .mac:hover {
   opacity: 80%;
-  -webkit-transition: .2s;
-  transition: .2s;
+  transition: 0.2s;
 }
-
-main .buttons_container .ios.ios, main .buttons_container .mac.ios {
-  background: #26baa4;
-  -webkit-box-shadow: 0px 4px 0px #16a085;
-          box-shadow: 0px 4px 0px #16a085;
+.main .buttons_container .ios.ios, .main .buttons_container .mac.ios {
+  background: hsl(171deg, 66%, 44%);
+  box-shadow: 0px 4px 0px #16a085;
 }
-
-main .buttons_container .ios.mac, main .buttons_container .mac.mac {
-  background: #6173ff;
-  -webkit-box-shadow: 0px 4px 0px #4d5dd5;
-          box-shadow: 0px 4px 0px #4d5dd5;
+.main .buttons_container .ios.mac, .main .buttons_container .mac.mac {
+  background: hsl(233deg, 100%, 69%);
+  box-shadow: 0px 4px 0px hsl(233deg, 62%, 57%);
 }
 
 @media screen and (min-width: 1024px) {
-  main {
+  .main {
     padding: 3rem 9rem;
     gap: 2rem;
   }
-  main img {
+  .main img {
     padding: 9rem 0 3rem 0;
   }
-  main h1 {
+  .main h1 {
     font-size: 3rem;
   }
-  main p {
+  .main p {
     width: 50%;
     font-size: 1.1em;
   }
-  main .buttons_container {
+  .main .buttons_container {
     margin-top: 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: center;
+    flex-direction: row;
   }
 }
-
 .snippets {
   padding: 1.5rem;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1.5rem;
 }
-
 .snippets h2 {
-  color: #4c545d;
+  color: hsl(210deg, 10%, 33%);
 }
-
 .snippets p {
-  color: #9fabb2;
+  color: hsl(201deg, 11%, 66%);
 }
-
 .snippets .image_text_container {
   margin-top: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 3rem;
 }
-
 .snippets .image_text_container .text_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
-
 .snippets .image_text_container .text_subcontainer h3 {
-  color: #4c545d;
+  color: hsl(210deg, 10%, 33%);
 }
 
 @media screen and (min-width: 1024px) {
   .snippets {
     padding: 3rem 9rem;
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .snippets h2 {
     font-size: 2em;
@@ -198,10 +143,7 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
   }
   .snippets .image_text_container {
     position: relative;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin-top: 6rem;
     gap: 0;
   }
@@ -214,45 +156,30 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
     right: 11rem;
   }
   .snippets .image_text_container .text_container {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-self: center;
+    flex-direction: column;
     text-align: start;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .snippets .image_text_container img {
     width: 100%;
     right: 13.5rem;
   }
 }
-
 .anywhere {
   padding: 5rem 1.5rem;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1.5rem;
 }
-
 .anywhere h2 {
-  color: #4c545d;
+  color: hsl(210deg, 10%, 33%);
 }
-
 .anywhere p {
-  color: #9fabb2;
+  color: hsl(201deg, 11%, 66%);
 }
-
 .anywhere img {
   margin-top: 1.5rem;
 }
@@ -260,9 +187,7 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
 @media screen and (min-width: 1024px) {
   .anywhere {
     padding: 9rem 9rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .anywhere h2 {
     font-size: 2em;
@@ -275,60 +200,33 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
     margin-top: 3rem;
   }
 }
-
 .workflow {
   padding: 1.5rem;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
-
 .workflow h2, .workflow h3 {
-  color: #4c545d;
+  color: hsl(210deg, 10%, 33%);
 }
-
 .workflow p {
-  color: #9fabb2;
+  color: hsl(201deg, 11%, 66%);
 }
-
 .workflow .tools_wrapper {
   margin-top: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .workflow .tools_wrapper .feature {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
-
 .workflow .tools_wrapper .feature img {
   margin-bottom: 1rem;
 }
@@ -336,12 +234,8 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
 @media screen and (min-width: 1024px) {
   .workflow {
     padding: 0 9rem 3rem 9rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
   }
   .workflow h2 {
@@ -355,90 +249,53 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
   }
   .workflow .tools_wrapper {
     margin-top: 4rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
   }
   .workflow .tools_wrapper .feature {
     width: 30%;
   }
 }
-
 .customers {
   padding: 6rem 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 5rem;
 }
 
 @media screen and (min-width: 1024px) {
   .customers {
     padding: 9rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 2rem;
   }
   .customers img {
     max-width: 15%;
   }
 }
-
 .clipboard {
   padding: 1.5rem;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
 }
-
 .clipboard h2 {
-  color: #4c545d;
+  color: hsl(210deg, 10%, 33%);
 }
-
 .clipboard p {
-  color: #9fabb2;
+  color: hsl(201deg, 11%, 66%);
 }
-
 .clipboard .buttons_container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1.5rem;
 }
-
 .clipboard .buttons_container .ios, .clipboard .buttons_container .mac {
   padding: 1rem 2rem;
   font-family: inherit;
@@ -449,23 +306,17 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
   border: none;
   cursor: pointer;
 }
-
 .clipboard .buttons_container .ios:hover, .clipboard .buttons_container .mac:hover {
   opacity: 80%;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 .clipboard .buttons_container .ios.ios, .clipboard .buttons_container .mac.ios {
-  background: #26baa4;
-  -webkit-box-shadow: 0px 4px 0px #16a085;
-          box-shadow: 0px 4px 0px #16a085;
+  background: hsl(171deg, 66%, 44%);
+  box-shadow: 0px 4px 0px #16a085;
 }
-
 .clipboard .buttons_container .ios.mac, .clipboard .buttons_container .mac.mac {
-  background: #6173ff;
-  -webkit-box-shadow: 0px 4px 0px #4d5dd5;
-          box-shadow: 0px 4px 0px #4d5dd5;
+  background: hsl(233deg, 100%, 69%);
+  box-shadow: 0px 4px 0px hsl(233deg, 62%, 57%);
 }
 
 @media screen and (min-width: 1024px) {
@@ -482,110 +333,66 @@ main .buttons_container .ios.mac, main .buttons_container .mac.mac {
   }
   .clipboard .buttons_container {
     margin-top: 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: center;
+    flex-direction: row;
   }
 }
-
 footer {
   padding: 6rem 1.5rem 2.5rem 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 3rem;
 }
-
 footer img {
   width: 25%;
 }
-
 footer nav ul {
   text-align: center;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
-
 footer nav ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
-
 footer nav ul a {
-  color: #4c545d;
+  color: hsl(210deg, 10%, 33%);
   cursor: pointer;
   text-decoration: none;
 }
-
 footer nav ul a:hover {
-  color: #26baa4;
-  -webkit-transition: .2s;
-  transition: .2s;
+  color: hsl(171deg, 66%, 44%);
+  transition: 0.2s;
 }
-
 footer .socials {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
 }
-
 footer .socials svg {
   fill: #4c545c;
 }
-
 footer .socials svg:hover {
-  fill: #26baa4;
-  -webkit-transition: .2s;
-  transition: .2s;
+  fill: hsl(171deg, 66%, 44%);
+  transition: 0.2s;
 }
 
 @media screen and (min-width: 1024px) {
   footer {
     padding: 9rem 9rem 3rem 9rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
   footer img {
     width: 5%;
   }
   footer nav ul {
     gap: 4rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     text-align: start;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
