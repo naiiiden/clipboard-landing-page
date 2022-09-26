@@ -212,7 +212,7 @@ img {
   color: hsl(210deg, 10%, 33%);
 }
 .workflow p {
-  color: hsl(201deg, 11%, 66%);
+  color: #525A60;
 }
 .workflow .tools_wrapper {
   margin-top: 3rem;
