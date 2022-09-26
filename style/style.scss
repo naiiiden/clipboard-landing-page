@@ -29,6 +29,15 @@ img {
     height: auto;
 }
 
+#skip {
+    position: absolute;
+    left: -999px;
+
+    &:focus {
+        left: 0;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     body {
         background: url("../images/bg-header-desktop.png");
